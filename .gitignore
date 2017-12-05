@@ -1,0 +1,8 @@
+.DS_Store
+.idea
+memories/*
+sample_screenshots/*
+*.pyc
+*.png
+*.h5
+mizumashi_data.py
