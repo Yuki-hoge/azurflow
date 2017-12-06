@@ -1,8 +1,10 @@
 .DS_Store
 .idea
 memories/*
+!memories/.gitkeep
 sample_screenshots/*
 *.pyc
 *.png
+!redwhiteframe.png
 *.h5
 mizumashi_data.py
