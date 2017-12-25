@@ -1,0 +1,13 @@
+# docker run --runtime=nvidia --env http_proxy=${http_proxy} -p 3128:3128 --rm -it tensorflow/tensorflow:latest-gpu bash
+
+version: '2'
+
+services:
+  d-azurflow: 
+  image: tensorflow/tensorflow:latest-gpu
+    container_name: d-azurflow
+    runtime: nvidia
+    volumes:
+      - ../:/app/
+    command:
+      "/bin/bash"
