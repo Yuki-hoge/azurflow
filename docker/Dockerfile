@@ -1,4 +1,4 @@
-FROM tensorflow/tensorflow-gpu:latest
+FROM tensorflow/tensorflow:latest-gpu
 MAINTAINER me <me@abc.com>
 
 RUN mkdir /app
