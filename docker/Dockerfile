@@ -1,11 +1,10 @@
 FROM tensorflow/tensorflow-gpu:latest
 MAINTAINER me <me@abc.com>
+WORKDIR /app
 
 # httpdのインストール
-RUN apt-get install -y 
-ホストのindex.htmlをImage内にコピー
-ADD ./index.html /var/www/html/
+# RUN apt-get install -y 
 
 #runした時にapache起動
-CMD echo "This is docker-azurflow..."
-CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
+# CMD echo "This is docker-azurflow..."
+CMD ["python", "train.py"]
