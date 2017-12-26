@@ -1,5 +1,7 @@
 FROM tensorflow/tensorflow-gpu:latest
 MAINTAINER me <me@abc.com>
+
+RUN mkdir /app
 WORKDIR /app
 
 # httpdのインストール
